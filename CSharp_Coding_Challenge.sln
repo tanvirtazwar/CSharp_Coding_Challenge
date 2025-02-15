@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldPhone_Keypad_Solution", "OldPhone_Keypad_Solution\OldPhone_Keypad_Solution.csproj", "{F8070C5E-586D-44C2-B6A5-C7AB964AB493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldPhone_Keypad_Tests", "OldPhone_Keypad_Tests\OldPhone_Keypad_Tests.csproj", "{AD8A44ED-5772-4DA1-94C6-7B11422C377E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F8070C5E-586D-44C2-B6A5-C7AB964AB493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8070C5E-586D-44C2-B6A5-C7AB964AB493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8070C5E-586D-44C2-B6A5-C7AB964AB493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8A44ED-5772-4DA1-94C6-7B11422C377E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8A44ED-5772-4DA1-94C6-7B11422C377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8A44ED-5772-4DA1-94C6-7B11422C377E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8A44ED-5772-4DA1-94C6-7B11422C377E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
