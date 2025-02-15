@@ -1,7 +1,18 @@
 ﻿namespace OldPhone_Keypad_Solution;
 
+/// <summary>
+/// Validates the input string against the allowed characters.
+/// </summary>
 public class StringValidator
 {
+    /// <summary>
+    /// Validates the input string against the allowed characters.          
+    /// </summary>
+    /// <param name="input"></param>
+    /// <param name="allowedCharacters"></param>
+    /// <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <exception cref="ArgumentException"></exception>
     public static void Validate(string input, ICollection<char> allowedCharacters)
     {
         if (input == null)

@@ -4,7 +4,6 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(OldPhone.OldPhonePad(""));
         Console.WriteLine(OldPhone.OldPhonePad("33#"));
         Console.WriteLine(OldPhone.OldPhonePad("227*#"));
         Console.WriteLine(OldPhone.OldPhonePad("4433555 555666096667775553#"));

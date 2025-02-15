@@ -1,5 +1,8 @@
 ﻿namespace OldPhone_Keypad_Solution;
 
+/// <summary>
+///  Emulates  old phone keypad
+/// </summary>
 public class OldPhone
 {
     private const char _space = ' ';
@@ -22,6 +25,16 @@ public class OldPhone
         {'0', " "  }
     };
 
+    /// <summary>
+    /// This method takes the user
+    /// Calls the validator
+    /// After validation it calls the parser
+    /// </summary>
+    /// <param name="input"></param>
+    ///  <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <exception cref="ArgumentException"></exception>
+    /// <returns>For valid input it returns the parsed string</returns>
     public static string OldPhonePad(string input)
     {
         StringValidator.Validate(input, _allowedCharacters);
@@ -34,6 +47,12 @@ public class OldPhone
         return result;
     }
 
+    /// <summary>
+    /// This method parse the valid users input
+    /// It handles all the cases when string is not empty
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns>For valid input it returns the parsed string</returns>
     private static string ParseMessage(string input)
     {
         var resultStack = new Stack<char>();
