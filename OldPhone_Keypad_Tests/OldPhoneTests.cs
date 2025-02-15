@@ -46,8 +46,9 @@ public class OldPhoneTests
 
     [TestCase("33#", "E")]
     [TestCase("227*#", "B")]
-    [TestCase("4433555 555666#", "HELLO")]
+    [TestCase("4433555 555666096667775553#", "HELLO WORLD")]
     [TestCase("8 88777444666*664#", "TURING")]
+    [TestCase("4440222666 6755533833 308443302226663 33#", "I COMPLETED THE CODE")]
     public void GivenExamples_ReturnExpectedResults(string input, string expected)
     {
         Assert.That(OldPhone.OldPhonePad(input), Is.EqualTo(expected));

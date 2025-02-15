@@ -26,15 +26,16 @@ public class OldPhone
     {
         StringValidator.Validate(input, _allowedCharacters);
 
-        if (input.Length == 0)
+        if (input.Length == 0 || input[^1] != _send)
         {
             return string.Empty;
         }
-        if (input[^1]  != _send)
-        {
-            return string.Empty;
-        }
+        var result = ParseMessage(input);
+        return result;
+    }
 
+    private static string ParseMessage(string input)
+    {
         var resultStack = new Stack<char>();
         var currentValue = input[0];
         var count = 0;
